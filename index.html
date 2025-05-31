@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Play Services APK Download</title>
+  <link rel="icon" type="image/png" href="Google Play Services.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e8f0fe, #ffffff);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img.logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #0b57d0;
+    }
+
+    .btn-download {
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      color: #fff;
+      background: #1a73e8;
+      border: 2px solid #0b57d0;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-download::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 200%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-30deg);
+      transition: left 0.5s ease;
+    }
+
+    .btn-download:hover::before {
+      left: 100%;
+    }
+
+    .btn-download:active {
+      transform: scale(0.95);
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .btn-download {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Logo added above the heading -->
+  <img src="logo.png" alt="Google Play Services Logo" class="logo" />
+
+  <h1>Download Google Play Services APK</h1>
+
+  <a href="GooglePlayServices.apk" download>
+    <button class="btn-download">Download APK</button>
+  </a>
+
+  <p class="note">This APK file works on most Android phones & emulators.</p>
+
+</body>
+</html>
